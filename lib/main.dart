@@ -1,4 +1,4 @@
-import 'package:classomni/screens/homepage.dart';
+import 'package:classomni/index.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'InstaClone',
-      home: HomePage(),
+      home: BottomNavBar(),
     );
   }
 }

@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:classomni/widgets/profile_avatar_widget.dart';
 import 'package:flutter/material.dart';
 
 class StoriesWidget extends StatelessWidget {
@@ -13,25 +14,12 @@ class StoriesWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 4),
       child: Column(
-        children: [
-          Container(
-            height: 70,
-            width: 70,
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: AssetImage("assets/garaj.jpg"),
-                fit: BoxFit.fill,
-              ),
-            ),
-            // child: const Image(
-            //   image: AssetImage("assets/BrainBlueBack.png"),
-            // ),
-          ),
-          const SizedBox(
+        children: const [
+          ProfileAvatarWidget(),
+          SizedBox(
             height: 10,
           ),
-          const Text(
+          Text(
             "Admin",
             style: TextStyle(fontSize: 12),
           )
