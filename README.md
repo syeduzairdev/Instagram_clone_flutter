@@ -1,4 +1,4 @@
-# classomni
+# InstagramClone
 
 A new Flutter project.
 
